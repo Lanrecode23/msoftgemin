@@ -200,8 +200,9 @@ ul {
     height: 650px;
     width: 900px;
 }
+
 .chatWindow .chatContent .resultData,
-.chatWindow .chatContent .resultResponse{
+.chatWindow .chatContent .resultResponse {
     display: flex;
     align-items: start;
     margin-bottom: 2rem;
@@ -239,8 +240,8 @@ ul {
     bottom: 30px;
     display: flex;
     padding: 4px 8px;
- 
- 
+
+
 }
 
 .privacyPolicy {
@@ -258,8 +259,8 @@ ul {
     outline: none;
     border: none;
     border-radius: 50px;
-    border:4px solid #f0f4f9;
-    position: relative;
+    border: 4px solid #f0f4f9;
+    /* position: relative; */
 }
 
 .inputArea .iconGroup {
@@ -299,6 +300,7 @@ ul {
     height: 32px;
     width: 32px;
 }
+
 .chatWindow .chatContent .resultResponse img {
     margin-right: 10px;
     height: 32px;
@@ -321,7 +323,8 @@ ul {
     background: linear-gradient(to right, #4285f4, #fff, #4285f4);
     height: 15px;
 }
-.animatedBg:nth-child(3){
+
+.animatedBg:nth-child(3) {
     width: 70%;
 }
 
@@ -427,19 +430,20 @@ ul {
         margin: 0;
         padding: 0.5rem;
     }
-   
+
     .chatWindow .chatContent {
         overflow-y: scroll;
         height: 900px;
         width: 900px;
     }
+
     .chatWindow .chatContent .resultData,
-    .chatWindow .chatContent .resultResponse{
+    .chatWindow .chatContent .resultResponse {
         display: flex;
         align-items: start;
         margin-bottom: 2rem;
     }
-    
+
     .chatWindow .startContent .promptSuggestion {
         display: flex;
         justify-content: space-between;
@@ -447,7 +451,7 @@ ul {
         flex-direction: column;
         height: fit-content;
     }
-    
+
     .chatWindow .startContent .promptSuggestion .suggestIcon {
         text-align: center;
     }
@@ -476,25 +480,29 @@ ul {
     }
 
     .inputArea {
-        width: 90%;
+        width: 100%;
         bottom: 20px;
         padding: 0 5px;
     }
 
     .inputArea input {
         width: 100%;
-        margin-bottom: 20px;
+        height: 60px;
+        padding: 28px;
+        font-size: 16px;
+        border-radius: 50px;
+        border: 4px solid #f0f4f9;
     }
 
     .inputArea .iconGroup {
         position: absolute;
         left: 70px;
         top: 7px;
-    
+
     }
 
     .privacyPolicy {
-        bottom: 5px;
+        bottom: 2px;
         font-size: 10px;
         background: transparent;
     }
