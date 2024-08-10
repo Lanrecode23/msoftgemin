@@ -432,7 +432,7 @@ ul {
     }
 }
 
-@media (max-width: 576x) {
+@media (max-width: 576px) {
     .sideNavigation {
         display: none;
     }
