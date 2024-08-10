@@ -198,6 +198,7 @@ ul {
 .chatWindow .chatContent {
     overflow-y: scroll;
     height: 650px;
+    max-width: 700px;
     width: 900px;
 }
 
@@ -280,6 +281,20 @@ ul {
 .inputArea .iconGroup :nth-child(3) {
     display: none;
 }
+.chatWindow .chatContent::-webkit-scrollbar {
+    width: 8px; 
+}
+
+.chatWindow .chatContent::-webkit-scrollbar-thumb {
+    background-color: #c4c7c5; 
+    border-radius: 4px; 
+}
+
+.chatWindow .chatContent::-webkit-scrollbar-track {
+    background-color: #f0f4f9; 
+}
+
+
 
 .chatWindow .chatContent .resultTest {
     display: flex;
@@ -417,7 +432,7 @@ ul {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 576x) {
     .sideNavigation {
         display: none;
     }
@@ -435,15 +450,19 @@ ul {
         overflow-y: scroll;
         height: 900px;
         width: 900px;
+            max-height: 400px; 
+            overflow-y: scroll;
     }
 
     .chatWindow .chatContent .resultData,
     .chatWindow .chatContent .resultResponse {
         display: flex;
-        align-items: start;
+        align-items:center;
         margin-bottom: 2rem;
     }
-
+    .chatContent .results .resultTest .loaded{
+        width: 70px;
+    }
     .chatWindow .startContent .promptSuggestion {
         display: flex;
         justify-content: space-between;

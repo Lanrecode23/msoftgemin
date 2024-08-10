@@ -128,7 +128,7 @@ async function getGeminiResponse(question, appendHistory) {
         results.innerHTML = `
         <div class="resultTest">
             <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png">
-            <p>${question}</p>
+            <p class:'loaded'>${question}</p>
         </div>
         <div class="resultResponse">
             <img src="https://cdn-icons-png.flaticon.com/128/8369/8369338.png">
